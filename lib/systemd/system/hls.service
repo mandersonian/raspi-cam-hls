@@ -1,0 +1,10 @@
+[Unit]
+Description=hls: starts hls service
+After=nginx.service
+
+[Service]
+ExecStart=/home/pi/video.sh
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
