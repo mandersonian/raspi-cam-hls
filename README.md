@@ -7,7 +7,7 @@ After putting files in place on your Raspberry Pi, set up the HLS service as fol
 
 ```
 sudo chmod 644 /lib/systemd/system/hls.service
-chmod +x video.sh
+chmod +x ~/video.sh
 sudo systemctl daemon-reload
 sudo systemctl enable hls.service
 sudo systemctl start hls.service
