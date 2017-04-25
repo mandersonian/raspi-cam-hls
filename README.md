@@ -5,6 +5,8 @@ Tested on Raspberry Pi Zero (non-W) with NoIR camera v2.  Using a WiFi dongle.  
 
 After putting files in place on your Raspberry Pi, set up the HLS service as follows (this will ensure that it runs on boot and is managed by the system in case it crashes).
 
+video.sh goes in your home directory.  ~/video.sh
+
 ```
 sudo chmod 644 /lib/systemd/system/hls.service
 chmod +x ~/video.sh
